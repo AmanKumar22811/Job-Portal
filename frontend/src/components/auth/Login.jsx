@@ -23,7 +23,7 @@ const Login = () => {
     const dispatch = useDispatch();
 
     const changeEventHandler = (e) => {
-        setInput({ ...input, [e.target.name]: e.target.value });
+        setInput({ ...input, [e.target.name]: e.target.value }); 
     }
 
     const submitHandler = async (e) => {
@@ -66,7 +66,7 @@ const Login = () => {
                             value={input.email}
                             name="email"
                             onChange={changeEventHandler}
-                            placeholder="patel@gmail.com"
+                            placeholder="abc@gmail.com"
                         />
                     </div>
 
@@ -77,7 +77,7 @@ const Login = () => {
                             value={input.password}
                             name="password"
                             onChange={changeEventHandler}
-                            placeholder="patel@gmail.com"
+                            placeholder="abc@1234"
                         />
                     </div>
                     <div className='flex items-center justify-between'>
